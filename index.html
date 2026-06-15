@@ -304,7 +304,19 @@
         </div>
 
     </div>
-
+    <!-- 1. 引入 medium-zoom 的脚本 -->
+    <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.8/dist/medium-zoom.min.js"></script>
+    
+    <!-- 2. 启动脚本 -->
+    <script>
+        // 这里的 'img' 表示选中页面上所有的图片
+        // 如果你想只让特定的图片能放大，可以给图片加个 class，比如 class="zoom-img"
+        mediumZoom('img', {
+            background: 'rgba(0, 0, 0, 0.8)', // 背景颜色（黑色半透明）
+            margin: 24, // 图片周围的边距
+            scrollOffset: 0 // 滚动触发距离
+        });
+    </script>
 </body>
 
 </html>
