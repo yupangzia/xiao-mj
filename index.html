@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绿无忧精品鸡蛋 - 产品详情</title>
+    <style>
+        /* --- 全局样式 --- */
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 750px;
+            /* 适配手机和PC最大宽度 */
+            margin: 0 auto;
+            background-color: #fff;
+            min-height: 100vh;
+            padding-bottom: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+        }
+
+        /* --- 顶部海报区域 --- */
+        .banner {
+            width: 100%;
+            display: block;
+        }
+
+        /* --- 通用板块样式 --- */
+        .section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+            border-bottom: 2px solid #d4a017;
+            /* 金色下划线 */
+            padding-bottom: 5px;
+        }
+
+        /* --- 参数表格 --- */
+        .params-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .params-table td {
+            padding: 8px 5px;
+            border-bottom: 1px dashed #eee;
+        }
+
+        .params-label {
+            color: #666;
+            width: 30%;
+        }
+
+        .params-value {
+            color: #333;
+            font-weight: 500;
+        }
+
+        /* --- 特点展示 (三个圆圈) --- */
+        .features-grid {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 15px;
+        }
+
+        .feature-item {
+            text-align: center;
+            width: 30%;
+        }
+
+        .feature-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #f0f0f0;
+            margin-bottom: 8px;
+        }
+
+        .feature-text {
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* --- 列表文本 --- */
+        .text-list {
+            text-align: left;
+            padding-left: 10px;
+        }
+
+        .text-list li {
+            margin-bottom: 10px;
+            list-style-type: none;
+            /* 去掉默认圆点 */
+            position: relative;
+            padding-left: 15px;
+        }
+
+        .text-list li::before {
+            content: "●";
+            color: #d4a017;
+            position: absolute;
+            left: 0;
+            font-size: 10px;
+            top: 4px;
+        }
+
+        /* --- 营养图示区域 --- */
+        .nutrition-banner {
+            width: 100%;
+            display: block;
+            margin: 10px 0;
+        }
+
+        /* --- 检测报告 --- */
+        .report-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .report-img {
+            width: 45%;
+            /* 并排显示两张 */
+            border: 1px solid #ddd;
+            padding: 2px;
+        }
+
+        /* --- 底部卡片 --- */
+        .footer-card {
+            background-color: #fffbf0;
+            /* 淡黄色背景 */
+            border: 1px solid #fceeb5;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 8px;
+            object-fit: cover;
+            margin-right: 15px;
+        }
+
+        .footer-info h3 {
+            margin: 0 0 5px 0;
+            color: #d4a017;
+            font-size: 18px;
+        }
+
+        .footer-info p {
+            margin: 0;
+            font-size: 12px;
+            color: #666;
+        }
+
+        /* --- 占位图提示样式 (当你没填图片时显示) --- */
+        img[src=""] {
+            background-color: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 12px;
+            min-height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- 1. 顶部海报 -->
+        <!-- 请替换下面的 src="" 为你的顶部大图链接 -->
+        <img class="banner" src="https://zhulangoss.oss-cn-beijing.aliyuncs.com/53b78b48-7caf-4df6-b0e2-f805ebd6f5c1.jpg" alt="顶部海报：绿无忧鸡蛋">
+
+        <!-- 2. 产品参数 -->
+        <div class="section">
+            <h2 class="section-title">产品参数</h2>
+            <table class="params-table">
+                <tr>
+                    <td class="params-label">产品名称</td>
+                    <td class="params-value">精品绿无忧鸡蛋</td>
+                </tr>
+                <tr>
+                    <td class="params-label">鸡蛋品种</td>
+                    <td class="params-value">罗曼粉</td>
+                </tr>
+                <tr>
+                    <td class="params-label">包装</td>
+                    <td class="params-value">精品装</td>
+                </tr>
+                <tr>
+                    <td class="params-label">保质期</td>
+                    <td class="params-value">30天</td>
+                </tr>
+                <tr>
+                    <td class="params-label">规格</td>
+                    <td class="params-value">360枚/箱</td>
+                </tr>
+                <tr>
+                    <td class="params-label">储存方式</td>
+                    <td class="params-value">避光、阴凉通风处</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- 3. 安全的蛋 (三个小图) -->
+        <div class="section">
+            <h2 class="section-title">绿无忧 安全的蛋</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <!-- 请替换 src="" -->
+                    <img class="feature-img" src="https://zhulangoss.oss-cn-beijing.aliyuncs.com/fa13f269-a076-4d20-83a8-2fcc4c7e83a0.png" alt="颜色">
+                    <div class="feature-text">颜色</div>
+                </div>
+                <div class="feature-item">
+                    <!-- 请替换 src="" -->
+                    <img class="feature-img" src="https://zhulangoss.oss-cn-beijing.aliyuncs.com/fa13f269-a076-4d20-83a8-2fcc4c7e83a0.png" alt="凝固度">
+                    <div class="feature-text">凝固度</div>
+                </div>
+                <div class="feature-item">
+                    <!-- 请替换 src="" -->
+                    <img class="feature-img" src="https://zhulangoss.oss-cn-beijing.aliyuncs.com/fa13f269-a076-4d20-83a8-2fcc4c7e83a0.png" alt="口感">
+                    <div class="feature-text">口感</div>
+                </div>
+            </div>
+            <ul class="text-list" style="margin-top: 20px;">
+                <li><strong>颜色：</strong>蛋黄大且饱满，呈现金黄色</li>
+                <li><strong>凝固度：</strong>蛋清粘度，蛋黄密度高，插上竹签，长时间直立</li>
+                <li><strong>口感：</strong>蛋香醇厚，蛋白细腻，吃起来有粘牙的感觉</li>
+            </ul>
+        </div>
+
+        <!-- 4. 健康的蛋 (饲料图) -->
+        <div class="section">
+            <h2 class="section-title">绿无忧 健康的蛋</h2>
+            <!-- 请替换 src="" -->
+            <img style="width:100%; border-radius:8px;" src="https://zhulangoss.oss-cn-beijing.aliyuncs.com/8b6f7951-0cf1-4c4c-aadc-5f9cb0ccea0a.jpg" alt="五谷杂粮饲料图">
+            <ul class="text-list" style="margin-top: 15px;">
+                <li>优选玉米、大豆、杂粮，零激素添加</li>
+                <li>严谨的饲料配方，精确营养配比</li>
+                <li>采用现代化蛋鸡饲养设备，精细化管理，保证鸡群健康</li>
+                <li>有颜有料有来头，用营养呵护健康</li>
+            </ul>
+        </div>
+
+        <!-- 5. 营养的蛋 (营养成分图) -->
+        <div class="section">
+            <h2 class="section-title">绿无忧 营养的蛋</h2>
+            <!-- 请替换 src="" -->
+            <img class="nutrition-banner" src="https://zhulangoss.oss-cn-beijing.aliyuncs.com/4757a179-792c-4528-b8aa-0608c8d5d4f4.jpg" alt="营养成分分析图">
+            <div style="text-align: left; font-size: 14px; padding: 0 10px;">
+                <p>1. 对抗中老年心血管疾病，提高老年人的免疫力，抗衰老</p>
+                <p>2. 可有效降低血液中的甘油三脂和胆固醇水平</p>
+                <p>3. 调节内分泌，推迟女性更年期，养颜、美容、补充孕妇营养</p>
+                <p>4. 富含DHA，有效促进幼儿脑神经及视觉系统发育，改善儿童缺钙综合症引起的厌食、异食、免疫力低下</p>
+            </div>
+        </div>
+
+        <!-- 6. 检测报告 -->
+        <div class="section">
+            <h2 class="section-title">绿无忧 检测报告</h2>
+            <div class="report-grid">
+                <!-- 请替换下面两个 src="" 为你的报告图片链接 -->
+                <img class="report-img" src="https://zhulangoss.oss-cn-beijing.aliyuncs.com/ff3d6c13-9f26-49a1-a583-439e8b168fea.jpg" alt="检测报告1">
+                <img class="report-img" src="https://zhulangoss.oss-cn-beijing.aliyuncs.com/ab81bc8e-ef03-49c4-be89-70ef92832596.jpg" alt="检测报告2">
+                <img class="report-img" src="https://zhulangoss.oss-cn-beijing.aliyuncs.com/ff3d6c13-9f26-49a1-a583-439e8b168fea.jpg" alt="检测报告3">
+                <img class="report-img" src="https://zhulangoss.oss-cn-beijing.aliyuncs.com/ab81bc8e-ef03-49c4-be89-70ef92832596.jpg" alt="检测报告4">
+            </div>
+        </div>
+
+        <!-- 7. 底部卡片 -->
+        <div class="footer-card">
+            <!-- 请替换 src="" -->
+            <img class="footer-img" src="https://zhulangoss.oss-cn-beijing.aliyuncs.com/fa13f269-a076-4d20-83a8-2fcc4c7e83a0.png" alt="鸡蛋小图">
+            <div class="footer-info">
+                <h3>绿无忧精品鸡蛋</h3>
+                <p>无抗无药残 | 每日新鲜 | 产地直销</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
